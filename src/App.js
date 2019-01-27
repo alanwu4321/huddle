@@ -85,9 +85,13 @@ class App extends Component {
     this.setState({box: box});
   }
 
+
+
   onInputChange = (event) => {
     this.setState({input: event.target.value});
   }
+
+
 
   // onButtonSubmit = () => {
   //   this.setState({imageUrl: this.state.input});
@@ -128,6 +132,7 @@ class App extends Component {
 
   render() {
     const { isSignedIn, route } = this.state;
+
     return (
       <div className="App">
         { route === 'home'
