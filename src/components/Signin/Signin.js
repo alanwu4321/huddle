@@ -1,4 +1,6 @@
 import React from 'react';
+import './signin.css';
+
 
 class Signin extends React.Component {
   constructor(props) {
@@ -49,13 +51,16 @@ if (user.id) {  //if there is an id
   render() {
     const { onRouteChange } = this.props;  //class thing 
     return (
-      <article className="br3 ba b--black-10 mv4 w-100 w-50-m w-25-l mw6 shadow-5 center">
+      <div className="outer">
+      <article className="outer middle br3 ba b--black-10 mt3 mv4 w-100 w-50-m w-25-l mw6 shadow-5 center">
         <main className="pa4 black-80">
           <div className="measure">
-            <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
-              <legend className="f1 fw6 ph0 mh0">Sign In</legend>
+          <img className="logosignin" src={require("../../assets/black.png")} />
+            <fieldset id="sign_up" className="ba white b--transparent ph0 mh0">
+            
+              <legend className="f1 fw6 ph0 mh0 signintext">Sign In</legend>
               <div className="mt3">
-                <label className="db fw6 lh-copy f6" htmlFor="email-address">Email</label>
+                <label className="db email fw6 lh-copy f6" htmlFor="email-address">Email</label>
                 <input
                   className="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100"
                   type="email"
@@ -65,7 +70,7 @@ if (user.id) {  //if there is an id
                 />
               </div>
               <div className="mv3">
-                <label className="db fw6 lh-copy f6" htmlFor="password">Password</label>
+                <label className="db pw fw6 lh-copy f6" htmlFor="password">Password</label>
                 <input
                   className="b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100"
                   type="password"
@@ -78,17 +83,37 @@ if (user.id) {  //if there is an id
             <div className="">
               <input
                 onClick={this.onSubmitSignIn}
-                className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib"
+                className="b signinb ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib"
                 type="submit"
                 value="Sign in"
               />
             </div>
             <div className="lh-copy mt3">
-              <p  onClick={() => onRouteChange('register')} className="f6 link dim black db pointer">Register</p>
+              
             </div>
           </div>
+          <hr ></hr>
+
+         <p  onClick={() => onRouteChange('register')} className=" link dim pointer register">Register</p>
+         <div className="fr w-35 ">
+              <input
+                onClick={() => onRouteChange('register')}
+                className="b regb ph3 pv2 input-reset ba  bg-transparent grow pointer f6 dib user"
+                type="submit"
+                value="As User"
+              />
+            </div>
+            <div className="fr w-50">
+              <input
+                onClick={() => onRouteChange('register')}
+                className="b regb ph3 pv2 input-reset ba bg-transparent grow pointer f6 dib owner"
+                type="submit"
+                value="As Owner"
+              />
+            </div>
         </main>
       </article>
+      </div>
     );
   }
 }
