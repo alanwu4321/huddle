@@ -94,13 +94,13 @@ if (user.id) {  //if there is an id
           </div>
           <hr ></hr>
 
-         <p  onClick={() => onRouteChange('register')} className=" link dim pointer register">Register</p>
+         <p  onClick={() => onRouteChange('register')} className=" link dim pointer register">Are you...</p>
          <div className="fr w-35 ">
               <input
                 onClick={() => onRouteChange('register')}
                 className="b regb ph3 pv2 input-reset ba  bg-transparent grow pointer f6 dib user"
                 type="submit"
-                value="As User"
+                value="A Fan"
               />
             </div>
             <div className="fr w-50">
@@ -108,7 +108,7 @@ if (user.id) {  //if there is an id
                 onClick={() => onRouteChange('register')}
                 className="b regb ph3 pv2 input-reset ba bg-transparent grow pointer f6 dib owner"
                 type="submit"
-                value="As Owner"
+                value="An Organization"
               />
             </div>
         </main>
