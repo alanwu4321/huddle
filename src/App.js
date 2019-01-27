@@ -28,6 +28,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
+      userType:'',
       input: '',
       imageUrl: '',
       box: {},
@@ -77,6 +78,9 @@ class App extends Component {
     }
   }
 
+  titleUpdate = (type)=>{
+    this.setState({userType:type});
+}
   displayFaceBox = (box) => {
     this.setState({box: box});
   }
@@ -155,8 +159,8 @@ class App extends Component {
           :
           (
              route === 'signin'
-             ? <Signin loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
-             : <Register loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
+             ? <Signin loadUser={this.loadUser} onRouteChange={this.onRouteChange} signUpType={this.titleUpdate}/>
+             : <Register loadUser={this.loadUser} onRouteChange={this.onRouteChange} signUpType={this.state.userType}/>
             )
            
         }
