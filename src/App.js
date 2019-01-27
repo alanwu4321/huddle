@@ -33,10 +33,6 @@ class App extends Component {
       input: '',
       imageUrl: '',
       box: {},
-<<<<<<< HEAD
-=======
-      isSignedIn: true,
->>>>>>> 245d556f550a9d09d24feb48ce05d040d9ae0198
       route: 'signin',
       isSignedIn: false,
       user: {
@@ -62,9 +58,9 @@ class App extends Component {
   
 // componentDidMount(){
 
-// fetch('http://localhost:3000/')
-// .then(response => response.json()) //so we can read the response from the server
-// .then(console.log)
+// // fetch('http://localhost:3001/profile/123')
+// // .then(response => response.json()) //so we can read the response from the server
+// // .then(console.log)
 
 // }
 
@@ -141,7 +137,7 @@ class App extends Component {
       <div className="App">
         { route === 'home'
           ? <div>
-            <Rank></Rank>
+            <Rank user = {this.state.user} onRouteChange={this.onRouteChange} /> 
               {/* <Logo />
               <Rank
                 name={this.state.user.name}

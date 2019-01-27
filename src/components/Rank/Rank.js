@@ -2,6 +2,16 @@ import React from 'react';
 import './Rank.css';
 
 const Rank = (props) => {
+
+
+  console.log("coming from rank")
+  console.log(props.user)
+
+  fetch(`http://localhost:3001/profile/${props.user.id}`)
+  .then(response => response.json()) //so we can read the response from the server
+  .then(console.log)
+
+  
   return (
     <div>
       <div className="flex justify-center">
@@ -54,7 +64,7 @@ const Rank = (props) => {
 
       <div className="flex justify-center">
         <div className=" w-80 pa3 mr2" id="btn-row">
-          <a className="f3 no-underline br-pill ph3 pv2 mb2 dib white bg-blue buttonCustom" href="#0">Listings</a>
+          <a onClick={() => props.onRouteChange('listings')} className="f3 no-underline br-pill ph3 pv2 mb2 dib white bg-blue buttonCustom" href="#0">Listings</a>
         </div>
       </div>
 

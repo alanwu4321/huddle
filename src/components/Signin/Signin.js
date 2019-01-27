@@ -19,11 +19,11 @@ class Signin extends React.Component {
     this.setState({signInPassword: event.target.value})
   }
 
-  retunUser = () =>{
+  returnUser = () =>{
     this.props.signUpType('Fan'); 
     this.props.onRouteChange('register');
   }
-  retunOrganizer = () =>{
+  returnOrganizer = () =>{
     this.props.signUpType('Organizer'); 
     this.props.onRouteChange('register');
   }
@@ -107,7 +107,7 @@ if (user.id) {  //if there is an id
          <p  onClick={() => onRouteChange('register')} className=" link dim pointer register">Are you...</p>
          <div className="fr w-35 ">
               <input
-                onClick={this.retunUser}
+                onClick={this.returnUser}
                 className="b regb ph3 pv2 input-reset ba  bg-transparent grow pointer f6 dib user"
                 type="submit"
                 value="A Fan"
@@ -115,7 +115,7 @@ if (user.id) {  //if there is an id
             </div>
             <div className="fr w-50">
               <input
-                onClick={this.retunOrganizer}
+                onClick={this.returnOrganizer}
                 className="b regb ph3 pv2 input-reset ba bg-transparent grow pointer f6 dib owner"
                 type="submit"
                 value="An Organization"

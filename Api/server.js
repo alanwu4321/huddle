@@ -64,7 +64,8 @@ app.post('/register', (req, res) => {
 app.get('/profile/:userId', (req, res) => {
   database.users.forEach(user => {
     if (user.id === req.params.userId) {
-      return res.json(user);
+      console.log(user)
+      return res.send(user);
     }
   })
   // res.json('no user')
