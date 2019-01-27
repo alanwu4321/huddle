@@ -12,7 +12,9 @@
     display: inline-block;
     color:white!important;
 }
-
+.bg-blue{
+    background-color: #34495e!important
+}
 .donkeybox {
     height: 30%;
     width: 80%;
