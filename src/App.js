@@ -5,7 +5,10 @@ import Navigation from './components/Navigation/Navigation';
 import Signin from './components/Signin/Signin';
 import Register from './components/Register/Register';
 import Rank from './components/Rank/Rank';
+import BettingBoard from './components/BettingBoard/BettingBoard';
+import Restaurant from './components/Restaurant/Restaurant';
 import './App.css';
+import Listings from './components/Listings/listings';
 
 
 const particlesOptions = {
@@ -27,8 +30,9 @@ class App extends Component {
       input: '',
       imageUrl: '',
       box: {},
-      route: 'home',
       isSignedIn: true,
+      route: 'listings',
+      isSignedIn: false,
       user: {
         id: '',
         name: '',
@@ -113,7 +117,7 @@ class App extends Component {
     } else if (route === 'home') {
       console.log('routing works')
       this.setState({isSignedIn: true})
-    }
+    } 
     this.setState({route: route});
   }
 
@@ -136,11 +140,22 @@ class App extends Component {
               />
               <FaceRecognition box={box} imageUrl={imageUrl} /> */}
             </div>
-          : (
+          : 
+            route === 'betting' 
+          ? <BettingBoard onRouteChange={this.onRouteChange}/>
+          : 
+            route === 'restaurant' 
+          ? <Restaurant onRouteChange={this.onRouteChange}/>
+          : 
+          route === 'listings'
+          ? <Listings onRouteChange={this.onRouteChange}/>
+          :
+          (
              route === 'signin'
              ? <Signin loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
              : <Register loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
             )
+           
         }
       </div>
     );
