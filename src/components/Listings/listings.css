@@ -1,8 +1,15 @@
 .upmargin{ 
+    padding-top:2%;
 }
 
 .title{
-    padding-top: 1vh;
+    margin-top: 5vh;
+    font-size: 3em;
+}
+
+.black
+{
+    color: #f0858e!important;
 }
 
 .everything {
@@ -18,7 +25,7 @@
 }
 
 .left-block {
-    background-color: transparent;
+    background-color: white;
     height: 100vh;
 }
 
@@ -28,12 +35,13 @@
 }
 
 .game-tile {
-    height: 200px;
-    width: 600px;
+    height: 36%;
+    width: 80%;
     background-color: white;
     margin: 0 auto;
-    margin-top: 100px;
-    border-radius: 15px;
+    margin-top: 50px;
+    border-radius: 35px;
+    margin-bottom: 90px;
 }
 
 .game-tile:hover {
@@ -51,6 +59,7 @@
 
 .tile-title h3 {
     padding: 10px;
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
 }
 
 .versus-content {
@@ -59,13 +68,13 @@
 
 .team-first img {
     width: 130px;
-    margin-top: 25px;
+    padding-top: 25%;
     margin-left: 15px;
 }
 
 .team-last img {
     width: 100px;
-    margin-top: 13px;
+    padding-top: 25%;
     margin-right: 15px;
 
 }
@@ -75,7 +84,9 @@
 }
 
 .versus {
-    margin-top: 25px;
+    margin-top: 55px;
+    font-size: 2em;
+    
 }
 .ba {
     border-style: solid;
