@@ -9,7 +9,7 @@
 
 .black
 {
-    color: rgb(206, 206, 206)!important;
+    color :#ffffff)!important;
 }
 
 .everything {
@@ -26,7 +26,7 @@
 }
 
 .left-block {
-    background-color: #34495E;
+    background-color: #ff6300;
     height: 100vh;
 }
 
@@ -48,7 +48,7 @@
 
 .tile-title-two {
     width: 100%;
-    background-color: navy;
+    background-color: #ff6300;
     height: 35px;
     margin-top: 80px;
     color: white;
@@ -58,7 +58,7 @@
 
 .tile-title-two h3 {
     padding: 10px;
-    background-color: #34495E;
+    background-color: #ff6300;
 }
 
 .versus-content-two {

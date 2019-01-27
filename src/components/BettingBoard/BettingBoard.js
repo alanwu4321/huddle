@@ -26,7 +26,7 @@ const BettingBoard = (props) => {
             <h3>Key Players</h3>
             <h5>Tom Brady</h5>
             <h5>Rob Gronkowski</h5>
-            <a className="f6 no-underline br-pill ph3 pv2 mb2 dib navy bg-white" href="#0">Place bet!</a>
+            <a className="f6 no-underline br-pill ph3 pv2 mb2 dib orange bg-white" href="#0">Place bet!</a>
           </div>
 
 
@@ -75,7 +75,7 @@ const BettingBoard = (props) => {
             <h3>Key Players</h3>
             <h5>Todd Gurley</h5>
             <h5>Aaron Donald</h5>
-            <a className="f6 no-underline br-pill ph3 pv2 mb2 dib navy bg-white" href="#0">Place bet!</a>
+            <a className="f6 no-underline br-pill ph3 pv2 mb2 dib orange bg-white" href="#0">Place bet!</a>
           </div>
         </div>
 
