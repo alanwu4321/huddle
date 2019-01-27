@@ -1,0 +1,47 @@
+.title-last img {
+    width: 150px;
+}
+
+.title-first img {
+    width: 170px;
+}
+
+.title {
+    padding: 5px;
+}
+
+.title h2 {
+    font-size: 35px;
+}
+
+.bar-tile {
+    width: 750px;
+    height: 255px;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 15px;
+    margin-top: 70px;
+    cursor: pointer;
+}
+
+.bar-tile-img img {
+    width: 200px;
+    margin: 50px auto 50px 20px;
+}
+
+.bar-tile-main {
+    text-align: left;
+    margin: 50px auto 0 80px;
+}
+
+.bar-tile-bet {
+    position: absolute;
+    margin: 50px auto 0 540px;
+    text-align: left;
+}
+
+.tile-top {
+    width: 100%;
+    height: 30px;
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+}
