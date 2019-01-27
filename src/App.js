@@ -9,18 +9,7 @@ import Listings from './components/Listings/listings';
 import Bar from './components/bar/bar';
 import Landing from './components/Landing/Landing';
 import Update from './components/BettingBoard/BettingUpdate'
-
-const particlesOptions = {
-  particles: {
-    number: {
-      value: 30,
-      density: {
-        enable: true,
-        value_area: 800
-      }
-    }
-  }
-}
+import Map from './components/Map/Map'
 
 class App extends Component {
   constructor() {
@@ -133,6 +122,7 @@ class App extends Component {
 
     return (
       <div className="App">
+<Map/>
         { route === 'home'
           ? <div>
             <Rank user = {this.state.user} onRouteChange={this.onRouteChange} userType = {this.state.userType} /> 
