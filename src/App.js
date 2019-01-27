@@ -32,7 +32,7 @@ class App extends Component {
       imageUrl: '',
       box: {},
       isSignedIn: true,
-      route: 'signin',
+      route: 'home',
       isSignedIn: false,
       user: {
         id: '',
