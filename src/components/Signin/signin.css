@@ -1,20 +1,58 @@
-.outer {
-  display: table;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+
+.outer{
+  //background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+}
+.signinb{
+background-color: #34495e!important;  
+  width:100%;
+  color:white
 }
 
-.middle {
-  display: table-cell;
-  vertical-align: middle;
+.logosignin{
+  float: left;
 }
 
-.inner {
-  margin-left: auto;
-  margin-right: auto;
-  width: 400px;
-  /*whatever width you want*/
+.middle{
+  background-color:white;
+}
+.signintext{
+  color:grey;
+  margin-bottom: 5%px;
+}
+
+.email{
+  color: slategrey;
+}
+.pw{
+  color: slategrey;
+}
+
+.register{
+  margin-top:10%;
+  text-align: center;
+  font-size:1.7em;
+  font-color:black;
+font-weight: 900;
+
+
+}
+
+.regb{
+
+  text-align: center;
+  display: flex;
+  justify-content: center;
+   margin-right:40px!important;
+
+}
+
+.owner{
+
+background-color:#27ae60!important;
+color:#fff!important;
+}
+
+.user{
+  color:#fff!important;
+  background-color:#27ae60!important;
 }
