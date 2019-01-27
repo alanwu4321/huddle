@@ -7,3 +7,10 @@
     background-color: green;
     height: 100vh;
 }
+
+.game-tile {
+    height: 200px;
+    width: 5gi00px;
+    background-color: black;
+    margin: 0 auto;
+}

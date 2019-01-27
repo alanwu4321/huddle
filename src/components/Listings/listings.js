@@ -4,11 +4,13 @@ import './listings.css';
 const Listings = (props) => {
   return (
     <div>
-       <div className="fl w-40 left-block">
+       <div className="fl w-30 left-block">
 
        </div>
-       <div className="fl w-60 right-block">
+       <div className="fl w-70 right-block">
+            <div className="game-tile">
 
+            </div>
        </div>
     </div>
   );
