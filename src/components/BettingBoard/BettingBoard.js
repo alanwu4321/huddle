@@ -26,11 +26,7 @@ const BettingBoard = (props) => {
             <h3>Key Players</h3>
             <h5>Tom Brady</h5>
             <h5>Rob Gronkowski</h5>
-<<<<<<< HEAD
-            <a className="f6 no-underline br-pill ph3 pv2 mb2 dib orange bg-white" href="#0">Place bet!</a>
-=======
             <a onClick={() => props.onRouteChange('update')} className="f6 no-underline br-pill ph3 pv2 mb2 dib navy bg-white" href="#0">Place bet!</a>
->>>>>>> c4563dd9687b06e4d09e654cfdcb0b48d012f7ee
           </div>
 
 
@@ -79,11 +75,7 @@ const BettingBoard = (props) => {
             <h3>Key Players</h3>
             <h5>Todd Gurley</h5>
             <h5>Aaron Donald</h5>
-<<<<<<< HEAD
-            <a className="f6 no-underline br-pill ph3 pv2 mb2 dib orange bg-white" href="#0">Place bet!</a>
-=======
             <a onClick={() => props.onRouteChange('update')} className="f6 no-underline br-pill ph3 pv2 mb2 dib navy bg-white" href="#0">Place bet!</a>
->>>>>>> c4563dd9687b06e4d09e654cfdcb0b48d012f7ee
           </div>
         </div>
 
