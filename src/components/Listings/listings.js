@@ -3,7 +3,7 @@ import './listings.css';
 
 const Listings = (props) => {
   return (
-    <div>     
+    <div className="everything">     
   <div className="fl w-30 left-block upmargin">
   <h1 class="f4 bg-near-black white mv0 pv2 ph3">Title of card</h1>
        <a className="db grow center mw5 black link block " title="Frank Ocean's Blonde on Apple Music"
@@ -72,7 +72,7 @@ const Listings = (props) => {
 
 
 <div className="fl w-70 right-block">
-    <div className="game-tile grow">
+    <div onClick={() => props.onRouteChange('game')} className="game-tile grow">
         <div className="tile-title"><h3>SuperBowl LLI: Sunday, February 3rd, 2019</h3></div>
         <div className="versus-content">
             <div className="fl w-40 team-first">

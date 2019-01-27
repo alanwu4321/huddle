@@ -2,23 +2,25 @@
     padding-top: 5%;
  
 }
-.image{
 
+.everything {
+    background-image: url('../../assets/background.jpg');
+}
+.image{
     margin: 0 auto;
 }
 
 .block{
-
     padding:2vh;
 }
 
 .left-block {
-    background-color: white;
+    background-color: transparent;
     height: 100vh;
 }
 
 .right-block {
-    background-color: green;
+    background-color: transparent;
     height: 100vh;
 }
 
