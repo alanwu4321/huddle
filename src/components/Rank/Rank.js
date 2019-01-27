@@ -53,33 +53,9 @@ const Rank = (props) => {
         </div>
       </div>
 
-      {/* 
-           <div onClick={() => props.onRouteChange('game')} className="game-tile grow">
-        <div className="tile-title"><h3>SuperBowl LLI: Sunday, February 3rd, 2019</h3></div>
-        <div className="versus-content">
-
-            <div className="fl w-40 team-first">
-                <img src={require("../../assets/neweng.png")} />
-                <h4>New England Patriots</h4>
-            </div>
-
-            <div className="fl w-20 versus">
-                <h1>VS</h1>
-            </div>
-
-            <div className="fl w-40 team-last">
-                <img src={require("../../assets/rams.png")} />
-                <h4>Los Angeles Rams</h4>
-            </div>
-
-        </div>
-    </div>
-   */}
-
-
       <div className="flex justify-center">
         <div className=" w-80 pa3 mr2" id="btn-row">
-          <a class="f6 grow no-underline br-pill ph3 pv2 mb2 dib white bg-black" href="#0">Listings</a>
+          <a className="f6 grow no-underline br-pill ph3 pv2 mb2 dib white bg-black" href="#0">Listings</a>
         </div>
       </div>
 

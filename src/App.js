@@ -28,6 +28,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
+      userType:'',
       input: '',
       imageUrl: '',
       box: {},
@@ -77,13 +78,20 @@ class App extends Component {
     }
   }
 
+  titleUpdate = (type)=>{
+    this.setState({userType:type});
+}
   displayFaceBox = (box) => {
     this.setState({box: box});
   }
 
+
+
   onInputChange = (event) => {
     this.setState({input: event.target.value});
   }
+
+
 
   // onButtonSubmit = () => {
   //   this.setState({imageUrl: this.state.input});
@@ -124,6 +132,7 @@ class App extends Component {
 
   render() {
     const { isSignedIn, route } = this.state;
+
     return (
       <div className="App">
         { route === 'home'
@@ -155,8 +164,8 @@ class App extends Component {
           :
           (
              route === 'signin'
-             ? <Signin loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
-             : <Register loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
+             ? <Signin loadUser={this.loadUser} onRouteChange={this.onRouteChange} signUpType={this.titleUpdate}/>
+             : <Register loadUser={this.loadUser} onRouteChange={this.onRouteChange} signUpType={this.state.userType}/>
             )
            
         }

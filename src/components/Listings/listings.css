@@ -29,63 +29,59 @@
     height: 100vh;
 }
 
-.right-block {
+.right-block-two {
     background-color: transparent;
     height: 100vh;
 }
 
-.game-tile {
-    height: 36%;
+.game-tile-two {
+    height: 30%;
     width: 80%;
     background-color: white;
     margin: 0 auto;
-    margin-top: 50px;
     border-radius: 35px;
     margin-bottom: 90px;
     cursor: pointer;
 }
 
-.game-tile:hover {
-
-}
-
-.tile-title {
+.tile-title-two {
     width: 100%;
     background-color: navy;
     height: 35px;
+    margin-top: 80px;
     color: white;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 
-.tile-title h3 {
+.tile-title-two h3 {
     padding: 10px;
     background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
 }
 
-.versus-content {
+.versus-content-two {
     color: black;
 }
 
-.team-first img {
+.team-first-two img {
     width: 130px;
     padding-top: 25%;
     margin-left: 15px;
 }
 
-.team-last img {
+.team-last-two img {
     width: 100px;
-    padding-top: 25%;
+    padding-top: 20%;
     margin-right: 15px;
 
 }
 
-.team-first h4, .team-last {
+.team-first-two h4, .team-last-two {
     font-size: 15px;
 }
 
-.versus {
-    margin-top: 55px;
+.versus-two h1 {
+    margin-top: 60px;
     font-size: 2em;
     
 }
