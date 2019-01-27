@@ -31,7 +31,7 @@ class App extends Component {
       imageUrl: '',
       box: {},
       isSignedIn: true,
-      route: 'listings',
+      route: 'home',
       isSignedIn: false,
       user: {
         id: '',
@@ -125,7 +125,6 @@ class App extends Component {
     const { isSignedIn, route } = this.state;
     return (
       <div className="App">
-        <Navigation isSignedIn={isSignedIn} onRouteChange={this.onRouteChange} />
         { route === 'home'
           ? <div>
             <Rank></Rank>

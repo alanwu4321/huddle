@@ -3,20 +3,20 @@ import './listings.css';
 
 const Listings = (props) => {
   return (
-    <div>     
+    <div className="everything">     
   <div className="fl w-30 left-block upmargin">
-  <h1 class="f4 bg-near-black white mv0 pv2 ph3">Title of card</h1>
+  <h1 className="f4 white mv0 pv2 ph3 pt4 title">Upcoming Game Schedule</h1>
        <a className="db grow center mw5 black link block " title="Frank Ocean's Blonde on Apple Music"
    href="https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/HOU.svg">
 
       
   <img className="db ba b--black-10 image"
        src="https://img.icons8.com/ios/50/000000/monday.png"/>
- <dl class="mt2 f6 lh-copy">
-    <dt class="clip">Title</dt>
-    <dd class="ml0 fw9">Monday</dd>
-    <dt class="clip">Artist</dt>
-    <dd class="ml0 gray">Frank Ocean</dd>
+ <dl className="mt2 f6 lh-copy">
+    <dt className="clip">Title</dt>
+    <dd className="ml0 fw9">Monday</dd>
+    <dt className="clip">Artist</dt>
+    <dd className="ml0 gray">Frank Ocean</dd>
   </dl>
   </a>
 
@@ -25,11 +25,11 @@ const Listings = (props) => {
 
   <img className="db ba b--black-10 image"
        src="https://img.icons8.com/ios/50/000000/monday.png"/>
- <dl class="mt2 f6 lh-copy">
-    <dt class="clip">Title</dt>
-    <dd class="ml0 fw9">Monday</dd>
-    <dt class="clip">Artist</dt>
-    <dd class="ml0 gray">Frank Ocean</dd>
+ <dl className="mt2 f6 lh-copy">
+    <dt className="clip">Title</dt>
+    <dd className="ml0 fw9">Monday</dd>
+    <dt className="clip">Artist</dt>
+    <dd className="ml0 gray">Frank Ocean</dd>
   </dl>
   </a>
   <a className="db grow center mw5 black link block " title="Frank Ocean's Blonde on Apple Music"
@@ -37,11 +37,11 @@ const Listings = (props) => {
 
   <img className="db ba b--black-10 image"
        src="https://img.icons8.com/ios/50/000000/monday.png"/>
- <dl class="mt2 f6 lh-copy">
-    <dt class="clip">Title</dt>
-    <dd class="ml0 fw9">Monday</dd>
-    <dt class="clip">Artist</dt>
-    <dd class="ml0 gray">Frank Ocean</dd>
+ <dl className="mt2 f6 lh-copy">
+    <dt className="clip">Title</dt>
+    <dd className="ml0 fw9">Monday</dd>
+    <dt className="clip">Artist</dt>
+    <dd className="ml0 gray">Frank Ocean</dd>
   </dl>
   </a>
   <a className="db grow center mw5 black link block" title="Frank Ocean's Blonde on Apple Music"
@@ -49,11 +49,11 @@ const Listings = (props) => {
 
   <img className="db ba b--black-10 image"
        src="https://img.icons8.com/ios/50/000000/monday.png"/>
- <dl class="mt2 f6 lh-copy">
-    <dt class="clip">Title</dt>
-    <dd class="ml0 fw9">Monday</dd>
-    <dt class="clip">Artist</dt>
-    <dd class="ml0 gray">Frank Ocean</dd>
+ <dl className="mt2 f6 lh-copy">
+    <dt className="clip">Title</dt>
+    <dd className="ml0 fw9">Monday</dd>
+    <dt className="clip">Artist</dt>
+    <dd className="ml0 gray">Frank Ocean</dd>
   </dl>
   </a>
   <a className="db grow center mw5 black link " title="Frank Ocean's Blonde on Apple Music"
@@ -61,18 +61,18 @@ const Listings = (props) => {
 
   <img className="db ba b--black-10 image"
        src="https://img.icons8.com/ios/50/000000/monday.png"/>
- <dl class="mt2 f6 lh-copy">
-    <dt class="clip">Title</dt>
-    <dd class="ml0 fw9">Monday</dd>
-    <dt class="clip">Artist</dt>
-    <dd class="ml0 gray">Frank Ocean</dd>
+ <dl className="mt2 f6 lh-copy">
+    <dt className="clip">Title</dt>
+    <dd className="ml0 fw9">Monday</dd>
+    <dt className="clip">Artist</dt>
+    <dd className="ml0 gray">Frank Ocean</dd>
   </dl>
   </a>
   </div>
 
 
 <div className="fl w-70 right-block">
-    <div className="game-tile grow">
+    <div onClick={() => props.onRouteChange('game')} className="game-tile grow">
         <div className="tile-title"><h3>SuperBowl LLI: Sunday, February 3rd, 2019</h3></div>
         <div className="versus-content">
             <div className="fl w-40 team-first">

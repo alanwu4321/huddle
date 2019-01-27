@@ -1,24 +1,29 @@
-.upmargin{
-    padding-top: 5%;
- 
+.upmargin{ 
+}
+
+.title{
+    padding-top: 1vh;
+}
+
+.everything {
+    /* background-image: url('../../assets/background.jpg'); */
+    text-align: center;
 }
 .image{
-
     margin: 0 auto;
 }
 
 .block{
-
     padding:2vh;
 }
 
 .left-block {
-    background-color: white;
+    background-color: transparent;
     height: 100vh;
 }
 
 .right-block {
-    background-color: green;
+    background-color: transparent;
     height: 100vh;
 }
 
@@ -146,7 +151,7 @@
 
 .clip {
     position: fixed !important;
-    _position: absolute !important;
+    position: absolute !important;
     clip: rect(1px 1px 1px 1px);
     clip: rect(1px, 1px, 1px, 1px);
 }
