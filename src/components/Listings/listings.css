@@ -1,10 +1,13 @@
-.upmargin{
-    padding-top: 5%;
- 
+.upmargin{ 
+}
+
+.title{
+    padding-top: 1vh;
 }
 
 .everything {
-    background-image: url('../../assets/background.jpg');
+    /* background-image: url('../../assets/background.jpg'); */
+    text-align: center;
 }
 .image{
     margin: 0 auto;
@@ -148,7 +151,7 @@
 
 .clip {
     position: fixed !important;
-    _position: absolute !important;
+    position: absolute !important;
     clip: rect(1px 1px 1px 1px);
     clip: rect(1px, 1px, 1px, 1px);
 }
