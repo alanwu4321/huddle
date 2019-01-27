@@ -10,15 +10,14 @@ const Rank = (props) => {
         </div>
 
         <div class=" w-40 pa3 mr2">
-          <br></br>
-          <h1 className="black smallerpic">Bill Sheng</h1>
-          <h3 className="blue">Die Hard New England Patriots Fan</h3>
+          <h1 className="black bigguy">Bill Sheng</h1>
+          <h3 className="blue ilovebill">Die Hard New England Patriots Fan</h3>
         </div>
 
         <div className=" w-20 pa3 mr2">
-          <p className="black details">Age: 24 <br></br> Location: Markham, Ontario <br></br><br></br> Win/Loss Ratio: 24/48 (50%) <br></br>
+          <h4 className="black details">Age: 24 <br></br> Location: Markham, Ontario <br></br><br></br> Win/Loss Ratio: 24/48 (50%) <br></br>
             Winnings: $621.56
-          </p>
+          </h4>
         </div>
       </div>
 
@@ -29,7 +28,7 @@ const Rank = (props) => {
       </div>
 
       <div className="flex justify-center">
-        <div className="donkeybox grow">
+        <div className="donkeybox">
           <div className="donkeyheader"><h3>NFL Playoffs Championships: Sunday January 20th 2019</h3></div>
           <div className="donkey-content">
 
@@ -55,7 +54,7 @@ const Rank = (props) => {
 
       <div className="flex justify-center">
         <div className=" w-80 pa3 mr2" id="btn-row">
-          <a className="f6 grow no-underline br-pill ph3 pv2 mb2 dib white bg-black" href="#0">Listings</a>
+          <a className="f6 no-underline br-pill ph3 pv2 mb2 dib white bg-black" href="#0">Listings</a>
         </div>
       </div>
 

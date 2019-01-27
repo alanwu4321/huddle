@@ -1,0 +1,47 @@
+.logo-box {
+    width: 80%;
+    height: 35%;
+    margin:0 auto;
+}
+
+.darkblue-box {
+    width: 60%;
+    height: 1%;
+    background-color: #34495E;
+    color: #34495E;
+    margin:8px auto;
+}
+
+.info-box {
+    width: 80%;
+    height: 62%;
+    margin:0 auto;
+    text-align: center;
+}
+
+.neweng {
+    width: 80%;
+    height: auto;
+    margin-top: 20%;
+    margin-left: 10%;
+}
+
+.rams {
+    width: 60%;
+    height: auto;
+    margin-top: 17%;
+    margin-left: 18%
+}
+.centerboidem {
+    text-align: center;
+}
+
+.iconhuddle {
+    margin-top: 10%;
+    width: 50%;
+    margin-bottom: 1%;
+}
+
+.iconnfl {
+    width: 20%;
+}
