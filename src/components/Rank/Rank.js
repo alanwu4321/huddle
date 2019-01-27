@@ -10,7 +10,7 @@ const Rank = (props) => {
         </div>
 
         <div class=" w-40 pa3 mr2">
-          <h1 className="black bigguy">Bill Sheng</h1>
+          <h1 className="bigguy navy">Bill Sheng</h1>
           <h3 className="blue ilovebill">Die Hard New England Patriots Fan</h3>
         </div>
 
@@ -23,7 +23,7 @@ const Rank = (props) => {
 
       <div className="flex justify-center">
         <div className=" w-80 pa3 mr2">
-          <h2 className="brown"> Betting History </h2>
+          <h2 className="navy"> Betting History </h2>
         </div>
       </div>
 
@@ -54,7 +54,7 @@ const Rank = (props) => {
 
       <div className="flex justify-center">
         <div className=" w-80 pa3 mr2" id="btn-row">
-          <a className="f6 no-underline br-pill ph3 pv2 mb2 dib white bg-black" href="#0">Listings</a>
+          <a className="f6 no-underline br-pill ph3 pv2 mb2 dib white bg-blue" href="#0">Listings</a>
         </div>
       </div>
 

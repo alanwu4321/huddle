@@ -10,6 +10,7 @@ import Restaurant from './components/Restaurant/Restaurant';
 import './App.css';
 import Listings from './components/Listings/listings';
 import Bar from './components/bar/bar';
+import Landing from './components/Landing/Landing';
 
 
 const particlesOptions = {
@@ -33,7 +34,7 @@ class App extends Component {
       imageUrl: '',
       box: {},
       isSignedIn: true,
-      route: 'betting',
+      route: 'home',
       isSignedIn: false,
       user: {
         id: '',
@@ -161,6 +162,9 @@ class App extends Component {
           : 
           route === 'listings'
           ? <Listings onRouteChange={this.onRouteChange}/>
+          :
+            route === 'landing'
+          ? <Landing onRouteChange={this.onRouteChange}/>
           :
           (
              route === 'signin'
