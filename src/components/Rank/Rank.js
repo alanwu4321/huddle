@@ -54,7 +54,7 @@ const Rank = (props) => {
 
       <div className="flex justify-center">
         <div className=" w-80 pa3 mr2" id="btn-row">
-          <a className="f6 no-underline br-pill ph3 pv2 mb2 dib white bg-blue" href="#0">Listings</a>
+          <a className="f3 no-underline br-pill ph3 pv2 mb2 dib white bg-blue buttonCustom" href="#0">Listings</a>
         </div>
       </div>
 
