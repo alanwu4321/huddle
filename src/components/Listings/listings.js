@@ -63,8 +63,13 @@ const Listings = (props) => {
 
 
 <div className="fl w-70 right-block-two">
+<<<<<<< HEAD
     <div onClick={() => props.onRouteChange('game')} className="game-tile-two grow">
         <div className="tile-title-two"><h3>SuperBowl LII: Sunday, February 3rd, 2019</h3></div>
+=======
+    <div onClick={() => props.onRouteChange('bar')} className="game-tile-two grow">
+        <div className="tile-title-two"><h3>SuperBowl LLI: Sunday, February 3rd, 2019</h3></div>
+>>>>>>> c4563dd9687b06e4d09e654cfdcb0b48d012f7ee
         <div className="versus-content-two">
             <div className="fl w-40 team-first-two">
                 <img src={require("../../assets/neweng.png")} />

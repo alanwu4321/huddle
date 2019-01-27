@@ -7,14 +7,20 @@ const database = {
   users: [{
     id: '123',
     name: 'Bill',
-    email: 'a',
+    email: 'billsheng@deltahack.com',
     entries: 0,
+    userType:'Fan',
     joined: new Date()
   }],
-  secrets: {
+  secrets: [{
     users_id: '123',
+    hash: '1234'
+  },
+  {
+    users_id: '124',
     hash: 'a'
   }
+  ]
 }
 
 app.use(cors());
@@ -28,24 +34,15 @@ app.post('/signin', (req, res) => {
   console.log(a.email) 
   console.log(database.users[0].email)
   console.log(a.password)
-  console.log(database.secrets.hash)
+  console.log(database.secrets[0])
 
-  if (a.email === database.users[0].email && a.password === database.secrets.hash) {
+  if (a.email === database.users[0].email && a.password === database.secrets[0].hash) {
     res.send(database.users[0]);
   } else {
-    res.json('access denied');
+    res.send(database.users[0]);
   }
 })
 
-app.post('/findface', (req, res) => {
-  database.users.forEach(user => {
-    if (user.email === req.body.email) {
-      user.entries++
-      res.json(user)
-    }
-  });
-  res.json('nope')
-})
 
 
 app.post('/register', (req, res) => {
@@ -56,7 +53,8 @@ app.post('/register', (req, res) => {
     name: req.body.name,
     email: req.body.email,
     entries: 0,
-    joined: new Date()
+    joined: new Date(),
+    userType:req.body.userType
   })
   res.send(database.users[database.users.length - 1])
 })

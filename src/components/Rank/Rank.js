@@ -1,15 +1,27 @@
 import React from 'react';
 import './Rank.css';
 
+
+
+
 const Rank = (props) => {
 
 
-  console.log("coming from rank")
+
+
+
+ 
   console.log(props.user)
 
   fetch(`http://localhost:3001/profile/${props.user.id}`)
   .then(response => response.json()) //so we can read the response from the server
-  .then(console.log)
+  .then(user => {
+    if (user.id) {  //if there is an id 
+     
+           }
+    
+      
+    })
 
   
   return (
@@ -19,16 +31,18 @@ const Rank = (props) => {
           <img src={require("./bill.jpg")} />
         </div>
 
-        <div class=" w-40 pa3 mr2">
-          <h1 className="bigguy navy">Bill Sheng</h1>
-          <h3 className="blue ilovebill">Die Hard New England Patriots Fan</h3>
-        </div>
-
-        <div className=" w-20 pa3 mr2">
-          <h4 className="black details">Age: 24 <br></br> Location: Markham, Ontario <br></br><br></br> Win/Loss Ratio: 24/48 (50%) <br></br>
+        <div class=" w-70 pa3 mr2">
+          <h1 className="bigguy navy">{props.user.name} </h1>
+          <h2 className="white f2">{props.user.userType}</h2>
+          <h3 className="blue ilovebill">"Die Hard New England Patriots Fan"</h3>
+          
+          <h4 className="details">Age: 24<br></br>Location: Markham, Ontario <br></br><hr></hr> Win/Loss Ratio: 24/48 (50%) <br></br>
             Winnings: $621.56
           </h4>
+  
         </div>
+
+       
       </div>
 
       <div className="flex justify-center">
@@ -64,7 +78,7 @@ const Rank = (props) => {
 
       <div className="flex justify-center">
         <div className=" w-80 pa3 mr2" id="btn-row">
-          <a onClick={() => props.onRouteChange('listings')} className="f3 no-underline br-pill ph3 pv2 mb2 dib white bg-blue buttonCustom" href="#0">Listings</a>
+          <a onClick={() => props.onRouteChange('listings')} className="f3 no-underline br-pill ph3 pv2 mb2 dib white bg-blue buttonCustom">Listings</a>
         </div>
       </div>
 
