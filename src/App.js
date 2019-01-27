@@ -9,6 +9,7 @@ import BettingBoard from './components/BettingBoard/BettingBoard';
 import Restaurant from './components/Restaurant/Restaurant';
 import './App.css';
 import Listings from './components/Listings/listings';
+import Bar from './components/bar/bar';
 
 
 const particlesOptions = {
@@ -31,7 +32,7 @@ class App extends Component {
       imageUrl: '',
       box: {},
       isSignedIn: true,
-      route: 'listings',
+      route: 'bar',
       isSignedIn: false,
       user: {
         id: '',
@@ -142,6 +143,9 @@ class App extends Component {
           : 
             route === 'betting' 
           ? <BettingBoard onRouteChange={this.onRouteChange}/>
+          : 
+            route === 'bar' 
+          ? <Bar onRouteChange={this.onRouteChange}/>
           : 
             route === 'restaurant' 
           ? <Restaurant onRouteChange={this.onRouteChange}/>
