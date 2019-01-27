@@ -10,7 +10,51 @@
 
 .game-tile {
     height: 200px;
-    width: 5gi00px;
-    background-color: black;
+    width: 600px;
+    background-color: white;
     margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 15px;
+}
+
+.game-tile:hover {
+
+}
+
+.tile-title {
+    width: 100%;
+    background-color: navy;
+    height: 35px;
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.tile-title h3 {
+    padding: 10px;
+}
+
+.versus-content {
+    color: black;
+}
+
+.team-first img {
+    width: 130px;
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+.team-last img {
+    width: 100px;
+    margin-top: 13px;
+    margin-right: 15px;
+
+}
+
+.team-first h4, .team-last {
+    font-size: 15px;
+}
+
+.versus {
+    margin-top: 25px;
 }
