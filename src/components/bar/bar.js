@@ -18,7 +18,7 @@ const Bar = (props) => {
             <br></br>
             <br></br>
             <div className="bar-tile grow">
-                <div class="tile-top"></div>
+                <div className="tile-top"></div>
                 <div className="fl w-20 bar-tile-img">
                     <img src={require("../../assets/real-sports.png")} />
                 </div>
@@ -32,7 +32,7 @@ const Bar = (props) => {
                 </div>
             </div>
             <div className="bar-tile grow">
-                <div class="tile-top"></div>
+                <div className="tile-top"></div>
                 <div className="fl w-20 bar-tile-img">
                     <img src={require("../../assets/stlouis.png")} />
                 </div>
