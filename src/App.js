@@ -30,8 +30,7 @@ class App extends Component {
       input: '',
       imageUrl: '',
       box: {},
-      isSignedIn: true,
-      route: 'register',
+      route: 'signin',
       isSignedIn: false,
       user: {
         id: '',
@@ -56,25 +55,25 @@ class App extends Component {
   
 // componentDidMount(){
 
-// fetch('http://localhost:3000/')
-// .then(response => response.json()) //so we can read the response from the server
-// .then(console.log)
+// // fetch('http://localhost:3001/profile/123')
+// // .then(response => response.json()) //so we can read the response from the server
+// // .then(console.log)
 
 // }
 
 
-  calculateFaceLocation = (data) => {
-    const clarifaiFace = data.outputs[0].data.regions[0].region_info.bounding_box;
-    const image = document.getElementById('inputimage');
-    const width = Number(image.width);
-    const height = Number(image.height);
-    return {   //returning an object
-      leftCol: clarifaiFace.left_col * width,
-      topRow: clarifaiFace.top_row * height,
-      rightCol: width - (clarifaiFace.right_col * width),
-      bottomRow: height - (clarifaiFace.bottom_row * height)
-    }
-  }
+  // calculateFaceLocation = (data) => {
+  //   const clarifaiFace = data.outputs[0].data.regions[0].region_info.bounding_box;
+  //   const image = document.getElementById('inputimage');
+  //   const width = Number(image.width);
+  //   const height = Number(image.height);
+  //   return {   //returning an object
+  //     leftCol: clarifaiFace.left_col * width,
+  //     topRow: clarifaiFace.top_row * height,
+  //     rightCol: width - (clarifaiFace.right_col * width),
+  //     bottomRow: height - (clarifaiFace.bottom_row * height)
+  //   }
+  // }
 
   titleUpdate = (type)=>{
     this.setState({userType:type});
@@ -135,7 +134,7 @@ class App extends Component {
       <div className="App">
         { route === 'home'
           ? <div>
-            <Rank></Rank>
+            <Rank user = {this.state.user} onRouteChange={this.onRouteChange} /> 
               {/* <Logo />
               <Rank
                 name={this.state.user.name}

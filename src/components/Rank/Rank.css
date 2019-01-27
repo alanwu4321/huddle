@@ -22,7 +22,10 @@
     width: 100%;
     color: white;
 }
-
+.buttonCustom{
+    margin-top: 5%;
+width: 80%!important;
+}
 .donkeyheader h3 {
     padding: 10px;
     background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
