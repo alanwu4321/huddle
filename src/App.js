@@ -42,28 +42,7 @@ class App extends Component {
     }})
   }
 
-  
-// componentDidMount(){
 
-// // fetch('http://localhost:3001/profile/123')
-// // .then(response => response.json()) //so we can read the response from the server
-// // .then(console.log)
-
-// }
-
-
-  // calculateFaceLocation = (data) => {
-  //   const clarifaiFace = data.outputs[0].data.regions[0].region_info.bounding_box;
-  //   const image = document.getElementById('inputimage');
-  //   const width = Number(image.width);
-  //   const height = Number(image.height);
-  //   return {   //returning an object
-  //     leftCol: clarifaiFace.left_col * width,
-  //     topRow: clarifaiFace.top_row * height,
-  //     rightCol: width - (clarifaiFace.right_col * width),
-  //     bottomRow: height - (clarifaiFace.bottom_row * height)
-  //   }
-  // }
 
   titleUpdate = (type)=>{
     this.setState({userType:type});
@@ -80,31 +59,7 @@ class App extends Component {
 
 
 
-  // onButtonSubmit = () => {
-  //   this.setState({imageUrl: this.state.input});
-  //   app.models
-  //     .predict(
-  //       Clarifai.FACE_DETECT_MODEL,
-  //       this.state.input)
-  //     .then(response => { //run this only if we have a response from Clarifi, unlike other method
-  //       if (response) { //as long as we have a response
-  //         fetch('http://localhost:3000/image', {
-  //           method: 'put', //updating the user info
-  //           headers: {'Content-Type': 'application/json'},
-  //           body: JSON.stringify({
-  //             id: this.state.user.id
-  //           })
-  //         })
-  //           .then(response => response.json())
-  //           .then(count => {   //Object will keep object the same
-  //             this.setState(Object.assign(this.state.user, { entries: count}))
-  //           })
 
-  //       }
-  //       this.displayFaceBox(this.calculateFaceLocation(response))
-  //     })
-  //     .catch(err => console.log(err));
-  // }
 
   onRouteChange = (route) => {
     if (route === 'signout') {
@@ -126,16 +81,7 @@ class App extends Component {
         { route === 'home'
           ? <div>
             <Rank user = {this.state.user} onRouteChange={this.onRouteChange} userType = {this.state.userType} /> 
-              {/* <Logo />
-              <Rank
-                name={this.state.user.name}
-                entries={this.state.user.entries}
-              /> */}
-              {/* <ImageLinkForm
-                onInputChange={this.onInputChange}
-                onButtonSubmit={this.onButtonSubmit}
-              />
-              <FaceRecognition box={box} imageUrl={imageUrl} /> */}
+     
             </div>
           : 
             route === 'betting' 
