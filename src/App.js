@@ -33,6 +33,10 @@ class App extends Component {
       input: '',
       imageUrl: '',
       box: {},
+<<<<<<< HEAD
+=======
+      isSignedIn: true,
+>>>>>>> 245d556f550a9d09d24feb48ce05d040d9ae0198
       route: 'signin',
       isSignedIn: false,
       user: {

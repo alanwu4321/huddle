@@ -7,8 +7,8 @@
 .darkblue-box {
     width: 60%;
     height: 1%;
-    background-color: #34495E;
-    color: #34495E;
+    background-color: white;
+    color: white;
     margin:8px auto;
 }
 
@@ -17,6 +17,12 @@
     height: 62%;
     margin:0 auto;
     text-align: center;
+}
+
+.side-tile {
+    margin-top: 40px;
+    background-color: #34495E;
+    color: white;
 }
 
 .neweng {
