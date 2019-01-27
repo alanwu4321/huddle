@@ -3,30 +3,81 @@ import './listings.css';
 
 const Listings = (props) => {
   return (
-    <div>
-       <div className="fl w-40 left-block">
-       <a className="db center mw5 black link dim"
-   title="Frank Ocean's Blonde on Apple Music"
-   href="https://geo.itunes.apple.com/us/album/blonde/id1146195596?at=1l3vqFJ&mt=1&app=music">
+   <div> 
+  <div className="fl w-30 left-block upmargin">
+  <h1 class="f4 bg-near-black white mv0 pv2 ph3">Title of card</h1>
+       <a className="db grow center mw5 black link block " title="Frank Ocean's Blonde on Apple Music"
+   href="https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/HOU.svg">
 
-  <img className="db ba b--black-10"/
-       alt="Frank Ocean Blonde Album Cover"
-       src="https://s3-us-west-1.amazonaws.com/tachyonsio/img/Blonde-Frank_Ocean.jpeg"
-  >
-
-  <dl className="mt2 f6 lh-copy">
-    <dt className="clip">Title</dt>
-    <dd className="ml0 fw9">Blonde</dd>
-    <dt className="clip">Artist</dt>
-    <dd className="ml0 gray">Frank Ocean</dd>
+  <img className="db ba b--black-10 image"
+       src="https://img.icons8.com/ios/50/000000/monday.png"/>
+ <dl class="mt2 f6 lh-copy">
+    <dt class="clip">Title</dt>
+    <dd class="ml0 fw9">Monday</dd>
+    <dt class="clip">Artist</dt>
+    <dd class="ml0 gray">Frank Ocean</dd>
   </dl>
-</a>
+  </a>
 
-       </div>
-       <div className="fl w-60 right-block">
+  <a className="db grow center mw5 black link block " title="Frank Ocean's Blonde on Apple Music"
+   href="https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/HOU.svg">
 
-       </div>
-    </div>
+  <img className="db ba b--black-10 image"
+       src="https://img.icons8.com/ios/50/000000/monday.png"/>
+ <dl class="mt2 f6 lh-copy">
+    <dt class="clip">Title</dt>
+    <dd class="ml0 fw9">Monday</dd>
+    <dt class="clip">Artist</dt>
+    <dd class="ml0 gray">Frank Ocean</dd>
+  </dl>
+  </a>
+  <a className="db grow center mw5 black link block " title="Frank Ocean's Blonde on Apple Music"
+   href="https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/HOU.svg">
+
+  <img className="db ba b--black-10 image"
+       src="https://img.icons8.com/ios/50/000000/monday.png"/>
+ <dl class="mt2 f6 lh-copy">
+    <dt class="clip">Title</dt>
+    <dd class="ml0 fw9">Monday</dd>
+    <dt class="clip">Artist</dt>
+    <dd class="ml0 gray">Frank Ocean</dd>
+  </dl>
+  </a>
+  <a className="db grow center mw5 black link block" title="Frank Ocean's Blonde on Apple Music"
+   href="https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/HOU.svg">
+
+  <img className="db ba b--black-10 image"
+       src="https://img.icons8.com/ios/50/000000/monday.png"/>
+ <dl class="mt2 f6 lh-copy">
+    <dt class="clip">Title</dt>
+    <dd class="ml0 fw9">Monday</dd>
+    <dt class="clip">Artist</dt>
+    <dd class="ml0 gray">Frank Ocean</dd>
+  </dl>
+  </a>
+  <a className="db grow center mw5 black link " title="Frank Ocean's Blonde on Apple Music"
+   href="https://static.nfl.com/static/content/public/static/wildcat/assets/img/logos/teams/HOU.svg">
+
+  <img className="db ba b--black-10 image"
+       src="https://img.icons8.com/ios/50/000000/monday.png"/>
+ <dl class="mt2 f6 lh-copy">
+    <dt class="clip">Title</dt>
+    <dd class="ml0 fw9">Monday</dd>
+    <dt class="clip">Artist</dt>
+    <dd class="ml0 gray">Frank Ocean</dd>
+  </dl>
+  </a>
+  </div>
+
+
+  <div className="fl w-70 right-block">
+            <div className="game-tile">
+
+            </div>
+  </div>
+
+  </div>
+  
   );
 }
 

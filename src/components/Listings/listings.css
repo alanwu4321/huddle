@@ -1,5 +1,19 @@
+.upmargin{
+    padding-top: 5%;
+ 
+}
+.image{
+
+    margin: 0 auto;
+}
+
+.block{
+
+    padding:2vh;
+}
+
 .left-block {
-    background-color: red;
+    background-color: white;
     height: 100vh;
 }
 
