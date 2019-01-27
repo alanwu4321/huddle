@@ -1,19 +1,12 @@
 import React, { Component } from 'react';
 import Particles from 'react-particles-js';
 import Clarifai from 'clarifai';
-import FaceRecognition from './components/FaceRecognition/FaceRecognition';
 import Navigation from './components/Navigation/Navigation';
 import Signin from './components/Signin/Signin';
 import Register from './components/Register/Register';
-import Logo from './components/Logo/Logo';
-import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
 import Rank from './components/Rank/Rank';
 import './App.css';
 
-//You must add your own API key here from Clarifai.
-const app = new Clarifai.App({
- apiKey: '46bcd8bb55944fcba89390e02a8a645b'
-});
 
 const particlesOptions = {
   particles: {
@@ -34,8 +27,8 @@ class App extends Component {
       input: '',
       imageUrl: '',
       box: {},
-      route: 'signin',
-      isSignedIn: false,
+      route: 'home',
+      isSignedIn: true,
       user: {
         id: '',
         name: '',
@@ -125,25 +118,23 @@ class App extends Component {
   }
 
   render() {
-    const { isSignedIn, imageUrl, route, box } = this.state;
+    const { isSignedIn, route } = this.state;
     return (
       <div className="App">
-         <Particles className='particles'
-          params={particlesOptions}
-        />
         <Navigation isSignedIn={isSignedIn} onRouteChange={this.onRouteChange} />
         { route === 'home'
           ? <div>
-              <Logo />
+            <Rank></Rank>
+              {/* <Logo />
               <Rank
                 name={this.state.user.name}
                 entries={this.state.user.entries}
-              />
-              <ImageLinkForm
+              /> */}
+              {/* <ImageLinkForm
                 onInputChange={this.onInputChange}
                 onButtonSubmit={this.onButtonSubmit}
               />
-              <FaceRecognition box={box} imageUrl={imageUrl} />
+              <FaceRecognition box={box} imageUrl={imageUrl} /> */}
             </div>
           : (
              route === 'signin'
