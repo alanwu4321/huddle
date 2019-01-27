@@ -63,7 +63,7 @@ const Listings = (props) => {
 
 
 <div className="fl w-70 right-block-two">
-    <div onClick={() => props.onRouteChange('game')} className="game-tile-two grow">
+    <div onClick={() => props.onRouteChange('bar')} className="game-tile-two grow">
         <div className="tile-title-two"><h3>SuperBowl LLI: Sunday, February 3rd, 2019</h3></div>
         <div className="versus-content-two">
             <div className="fl w-40 team-first-two">

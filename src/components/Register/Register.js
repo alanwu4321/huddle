@@ -24,13 +24,14 @@ class Register extends React.Component {
   }
 
   onSubmitSignIn = () => {
-    fetch('http://localhost:3000/register', {
+    fetch('http://localhost:3001/register', {
       method: 'post', //on the body so the server be retriving req.body 
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
         email: this.state.email,
         password: this.state.password,
-        name: this.state.name
+        name: this.state.name,
+        userType: this.props.signUpType
       })
     })
       .then(response => response.json())
@@ -99,6 +100,14 @@ class Register extends React.Component {
                 className="b signinb ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib"
                 type="submit"
                 value="Register"
+              />
+            </div>
+            <div className="mt3">
+              <input
+                onClick={() => this.props.onRouteChange('signin')}
+                className="b signinb ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib"
+                type="submit"
+                value="No, I have an account"
               />
             </div>
             <div className="lh-copy mt3">

@@ -8,7 +8,7 @@ import './App.css';
 import Listings from './components/Listings/listings';
 import Bar from './components/bar/bar';
 import Landing from './components/Landing/Landing';
-
+import Update from './components/BettingBoard/BettingUpdate'
 
 const particlesOptions = {
   particles: {
@@ -48,7 +48,8 @@ class App extends Component {
       name: data.name,
       email: data.email,
       entries: data.entries,
-      joined: data.joined
+      joined: data.joined,
+      userType: data.userType
     }})
   }
 
@@ -134,7 +135,7 @@ class App extends Component {
       <div className="App">
         { route === 'home'
           ? <div>
-            <Rank user = {this.state.user} onRouteChange={this.onRouteChange} /> 
+            <Rank user = {this.state.user} onRouteChange={this.onRouteChange} userType = {this.state.userType} /> 
               {/* <Logo />
               <Rank
                 name={this.state.user.name}
@@ -161,6 +162,9 @@ class App extends Component {
           :
             route === 'landing'
           ? <Landing onRouteChange={this.onRouteChange}/>
+          :
+          route === 'update'
+          ? <Update onRouteChange={this.onRouteChange}/>
           :
           (
              route === 'signin'

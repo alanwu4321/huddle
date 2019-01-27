@@ -1,5 +1,5 @@
 import React from 'react';
-import './bar.css';
+import '../bar/bar.css';
 
 const Bar = (props) => {
   return (
@@ -41,7 +41,7 @@ const Bar = (props) => {
                     <h3>@595 Bay Street, Toronto, CA</h3>
                 </div>
                 <div className="fl w-40 bar-tile-bet">
-                    <h2>Prize Pool: $150</h2>
+                    <h2 className="betupdate">Prize Pool: $180</h2>
                     <h3>Minimum Bet: $5</h3>
                 </div>
             </div>
